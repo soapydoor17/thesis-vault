@@ -1,0 +1,21 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [],
+  "exportFormats": [
+    {
+      "name": "Create Literature Note",
+      "outputPathTemplate": "01 Literature/{{ creators[0].lastName }} - {{ date | format(\"YYYY\") }} - {{ title.split(\" \").slice(0,5).join(\" \") }}.md",
+      "imageOutputPathTemplate": "98 Attachments/{{authors}} - {{year}} - {{title}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "99 Templates/ZI_Template.md",
+      "cslStyle": "ieee"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": false,
+  "whichNotesToOpenAfterImport": "first-imported-note"
+}

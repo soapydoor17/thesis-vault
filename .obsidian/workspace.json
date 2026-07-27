@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "7179d3b57492662d",
+    "type": "split",
+    "children": [
+      {
+        "id": "7ca9d52465a0214e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "070af2ef827851b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Inbox/26-06-05 Meeting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "26-06-05 Meeting"
+            }
+          },
+          {
+            "id": "772aa38d72615d80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Inbox/27-07-05 Meeting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "27-07-05 Meeting"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "240391e7b9f309ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a59be38d5d1a2ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55ddb436c8f701b1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "37f7f08311c2cf28",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "31155dd283c5e31e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "16fd20886d635ccc",
+    "type": "split",
+    "children": [
+      {
+        "id": "df147b08e802c480",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2cf106442a545e51",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "d446deef4250926f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "349b855825336177",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9d674ca3e3c04752",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "600b93416910ae90",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "55ddb436c8f701b1",
+  "lastOpenFiles": [
+    "01 Literature/Spiridonov - 2021 - Small Satellite Orbit Determination Methods.md",
+    "00 Inbox/26-06-05 Meeting.md",
+    "00 Inbox/Secular Perturbation.md",
+    "02 Concepts/Range Rate.md",
+    "02 Concepts/Slant Range.md",
+    "02 Concepts/Azimuth.md",
+    "98 Attachments/Horizontal Coordinate System (WIKIPEDIA).png",
+    "02 Concepts/(Second) Zonal Harmonics.md",
+    "HOME PAGE.md",
+    "00 Inbox/27-07-05 Meeting.md",
+    "99 Templates/ZI_Template.md",
+    "00 Inbox/Coyle - 2001 - Orbit Determination at a Single.md",
+    "99 Templates/Meeting_Template.md",
+    "02 Concepts/Kepler's Law's of Planetary Motion.md",
+    "02 Concepts/Keplerian Motion Model.md",
+    "02 Concepts/Perturbed Circular Motion Model.md",
+    "02 Concepts/Doppler Frequency Shift.md",
+    "02 Concepts/Two-Line Element (TLE).md",
+    "00 Inbox/TO DO.md",
+    "02 Concepts/Telemetry.md",
+    "Untitled.base",
+    "99 Templates/Definition_Template.md",
+    "02 Definitions/Telemetry.md",
+    "03 MOCs",
+    "05 Meetings",
+    "04 Thesis Drafts",
+    "02 Concepts",
+    "97 Archive",
+    "00 Inbox",
+    "Readings/Alexander A. Spiridonov, Vladimir A. Saetchnikov, Dmitrii V. Ushakov, Vladimir E. Cherny, Alexey G. Kezik -  - Small Satellite Orbit Determination Methods Based on the Doppler Measurements by Belarusian State University Ground Station.md",
+    "Readings/Daniel Coyle, Henry J. Pernicka -  - Orbit Determination at a Single Ground Station Using Range Rate Data.md",
+    "Readings/spiridonovSmallSatelliteOrbit2021.md",
+    "98 Attachments",
+    "02 Definitions",
+    "Welcome.md",
+    "99 Templates"
+  ]
+}
