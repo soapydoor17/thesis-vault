@@ -1,0 +1,7 @@
+#draft #progress-report 
+
+> The Results and Discussion section should be typically 5 to 10 pages in length and should include the main results which clearly indicate and highlight your progress and achievements during the semester. It is usually best to arrange your Results and Discussion section chronologically describing what you did and achieved as you moved through the semester. If you have any results or other significant data available then present this in figures or tables together with an associated description of the data that highlights its significance in the context of your project and also the wider context of the project area in general, e.g., compare your data with that obtained previously by engineers or researchers.
+> 
+> It is important that you highlight any help or assistance provided to you during the semester, particularly if omission of this information would lead the reader to believe incorrectly that you had done everything by yourself. For example, you may have received experimental or other technical assistance from the technical staff or you may have been partly supervised or assisted by an external company or organisation.
+>
+> The Results and Discussion section should also include reference to any difficulties that you might have encountered during the semester and how this affected your progress or achievements. You might also wish to discuss whether these difficulties led to any changes in plan or goals during the semester and how you expect to mitigate these difficulties, if at all, during the next semester.

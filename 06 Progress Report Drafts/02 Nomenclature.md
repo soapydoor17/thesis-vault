@@ -1,0 +1,5 @@
+#draft #progress-report 
+
+> If the report contains a large number of symbols (i.e., variables and constants) then you may wish to optionally include a Nomenclature page. However, for many students their report may contain only a relatively small number, e.g., less than 20, symbols in which case a Nomenclature page is not required.
+>
+> The nomenclature should be split into three approximate columns according to symbol, meaning, and SI units with each symbol row being separated from its neighbour by a blank half line (i.e., 6 points) or full line (i.e., 12 points) space. The heading for each column should be in 12 point Times New Roman Bold font and, whilst it may be convenient to format the nomenclature using the Table function in your word processor, the cell border should be invisible so that the layout of the table format is essentially hidden.

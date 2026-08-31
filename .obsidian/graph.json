@@ -27,6 +27,13 @@
         "a": 1,
         "rgb": 16776074
       }
+    },
+    {
+      "query": "tag:#task  ",
+      "color": {
+        "a": 1,
+        "rgb": 11796684
+      }
     }
   ],
   "collapse-display": true,
@@ -39,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1,
-  "close": false
+  "scale": 0.9382652946758361,
+  "close": true
 }

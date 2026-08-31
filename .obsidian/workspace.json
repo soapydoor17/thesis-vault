@@ -8,31 +8,45 @@
         "type": "tabs",
         "children": [
           {
-            "id": "070af2ef827851b9",
+            "id": "67444adddfafeb65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Inbox/26-06-05 Meeting.md",
+                "file": "04 Meetings/26-08-25 Meeting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "26-06-05 Meeting"
+              "title": "26-08-25 Meeting"
             }
           },
           {
-            "id": "772aa38d72615d80",
+            "id": "76e6d61d0b047400",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Inbox/27-07-05 Meeting.md",
+                "file": "02 Concepts/SatNOGS Database.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "27-07-05 Meeting"
+              "title": "SatNOGS Database"
+            }
+          },
+          {
+            "id": "03b55920ee49b9c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 Supervisor Tasks/Project Plan DRAFT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Project Plan DRAFT"
             }
           }
         ]
@@ -55,7 +69,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -194,46 +210,48 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "55ddb436c8f701b1",
+  "active": "67444adddfafeb65",
   "lastOpenFiles": [
-    "01 Literature/Spiridonov - 2021 - Small Satellite Orbit Determination Methods.md",
-    "00 Inbox/26-06-05 Meeting.md",
-    "00 Inbox/Secular Perturbation.md",
-    "02 Concepts/Range Rate.md",
-    "02 Concepts/Slant Range.md",
-    "02 Concepts/Azimuth.md",
-    "98 Attachments/Horizontal Coordinate System (WIKIPEDIA).png",
-    "02 Concepts/(Second) Zonal Harmonics.md",
-    "HOME PAGE.md",
-    "00 Inbox/27-07-05 Meeting.md",
-    "99 Templates/ZI_Template.md",
-    "00 Inbox/Coyle - 2001 - Orbit Determination at a Single.md",
+    "00 Inbox/26-09-08 Meeting.md",
+    "05 Supervisor Tasks/Project Plan DRAFT.md",
+    "00 Inbox/Kalman Filtering.md",
+    "02 Concepts/SatNOGS Database.md",
+    "04 Meetings/26-08-11 Meeting.md",
+    "04 Meetings/26-08-25 Meeting.md",
+    "04 Meetings/26-07-27 Meeting.md",
+    "02 Concepts/NORAD.md",
+    "05 Supervisor Tasks/Requirements.md",
+    "06 Progress Report Drafts/07 References.md",
+    "06 Progress Report Drafts/06 Future Work.md",
+    "06 Progress Report Drafts/05 Results and Discussion.md",
+    "06 Progress Report Drafts/04 Aims.md",
+    "06 Progress Report Drafts/03 Introduction.md",
+    "06 Progress Report Drafts/02 Nomenclature.md",
+    "06 Progress Report Drafts/01 Abstract.md",
+    "06 Progress Report Drafts/00 Progress Report Plan.md",
+    "06 Progress Report Drafts/08 Appendix.md",
+    "99 Templates/Draft_Template.md",
+    "05 Supervisor Tasks/Dummy Problems - Gradient Descent.md",
+    "06 Progress Report Drafts",
+    "02 Concepts/Gradient Descent.md",
+    "99 Templates/Supervisor Task_Template.md",
     "99 Templates/Meeting_Template.md",
-    "02 Concepts/Kepler's Law's of Planetary Motion.md",
-    "02 Concepts/Keplerian Motion Model.md",
-    "02 Concepts/Perturbed Circular Motion Model.md",
-    "02 Concepts/Doppler Frequency Shift.md",
-    "02 Concepts/Two-Line Element (TLE).md",
-    "00 Inbox/TO DO.md",
-    "02 Concepts/Telemetry.md",
+    "05 Supervisor Tasks",
+    "00 Inbox/Coyle - 2001 - Orbit Determination at a Single.md",
+    "01 Literature/Spiridonov - 2021 - Small Satellite Orbit Determination Methods.md",
+    "04 Meetings/26-06-05 Meeting.md",
+    "98 Attachments/Horizontal Coordinate System (WIKIPEDIA).png",
     "Untitled.base",
-    "99 Templates/Definition_Template.md",
-    "02 Definitions/Telemetry.md",
     "03 MOCs",
-    "05 Meetings",
-    "04 Thesis Drafts",
+    "04 Meetings",
+    "07 Thesis Drafts",
     "02 Concepts",
     "97 Archive",
     "00 Inbox",
-    "Readings/Alexander A. Spiridonov, Vladimir A. Saetchnikov, Dmitrii V. Ushakov, Vladimir E. Cherny, Alexey G. Kezik -  - Small Satellite Orbit Determination Methods Based on the Doppler Measurements by Belarusian State University Ground Station.md",
-    "Readings/Daniel Coyle, Henry J. Pernicka -  - Orbit Determination at a Single Ground Station Using Range Rate Data.md",
-    "Readings/spiridonovSmallSatelliteOrbit2021.md",
-    "98 Attachments",
-    "02 Definitions",
-    "Welcome.md",
-    "99 Templates"
+    "98 Attachments"
   ]
 }
