@@ -21,6 +21,7 @@
 - [ ] Final edits to milestones
 - [ ] Papers
 - [ ] Project plan and share stuff with Kyle
+	- [ ] Share github repo
 - [ ] Start Requirements
 - [ ] Try to request data from SatNOGs
 	- [ ] Look at format and how to get useful data
