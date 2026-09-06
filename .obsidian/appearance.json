@@ -3,5 +3,6 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "extended-colorschemes"
-  ]
+  ],
+  "accentColor": "#f55c5c"
 }

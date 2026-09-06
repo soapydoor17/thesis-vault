@@ -1,7 +1,7 @@
 ---
 Assigned: 2026-08-11
 Due: 2026-08-25
-Status: Active
+Status: Complete
 Type: dummy-problems
 tags:
   - task

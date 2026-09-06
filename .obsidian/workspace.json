@@ -8,7 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "67444adddfafeb65",
+            "id": "772aa38d72615d80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 Supervisor Tasks/Project Plan DRAFT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Project Plan DRAFT"
+            }
+          },
+          {
+            "id": "043c2c533b982f7d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,35 +36,49 @@
             }
           },
           {
-            "id": "76e6d61d0b047400",
+            "id": "b237544fc288c46e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Supervisor Tasks/Requirements.md",
+                "file": "00 Inbox/Getting Data from SatNOGS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Requirements"
+              "title": "Getting Data from SatNOGS"
             }
           },
           {
-            "id": "03b55920ee49b9c3",
+            "id": "e359526ba4a050f1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Supervisor Tasks/Project Plan DRAFT.md",
+                "file": "00 Inbox/26-09-08 Meeting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Project Plan DRAFT"
+              "title": "26-09-08 Meeting"
+            }
+          },
+          {
+            "id": "82d9b641b5b6d3f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 Inbox/Dummy Problems - Gauss-Newton Matrix.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Dummy Problems - Gauss-Newton Matrix"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -205,54 +233,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Create new base": false
     }
   },
-  "active": "03b55920ee49b9c3",
+  "active": "043c2c533b982f7d",
   "lastOpenFiles": [
-    "05 Supervisor Tasks/Requirements.md",
-    "02 Concepts/SatNOGS Database.md",
-    "04 Meetings/26-08-25 Meeting.md",
+    "00 Inbox/Getting Data from SatNOGS.md",
     "00 Inbox/26-09-08 Meeting.md",
+    "04 Meetings/26-08-25 Meeting.md",
     "05 Supervisor Tasks/Project Plan DRAFT.md",
-    "00 Inbox/Kalman Filtering.md",
-    "04 Meetings/26-08-11 Meeting.md",
-    "04 Meetings/26-07-27 Meeting.md",
-    "02 Concepts/NORAD.md",
+    "00 Inbox/Dummy Problems - Gauss-Newton Matrix.md",
+    "02 Concepts/Gradient Descent.md",
+    "05 Supervisor Tasks/Requirements.md",
+    "05 Supervisor Tasks/Dummy Problems - Gradient Descent.md",
+    "99 Templates/Draft_Template.md",
+    "99 Templates/Supervisor Task_Template.md",
+    "06 Progress Report Drafts/08 Appendix.md",
     "06 Progress Report Drafts/07 References.md",
     "06 Progress Report Drafts/06 Future Work.md",
-    "06 Progress Report Drafts/05 Results and Discussion.md",
     "06 Progress Report Drafts/04 Aims.md",
+    "06 Progress Report Drafts/05 Results and Discussion.md",
     "06 Progress Report Drafts/03 Introduction.md",
     "06 Progress Report Drafts/02 Nomenclature.md",
     "06 Progress Report Drafts/01 Abstract.md",
     "06 Progress Report Drafts/00 Progress Report Plan.md",
-    "06 Progress Report Drafts/08 Appendix.md",
-    "99 Templates/Draft_Template.md",
-    "05 Supervisor Tasks/Dummy Problems - Gradient Descent.md",
     "06 Progress Report Drafts",
-    "02 Concepts/Gradient Descent.md",
-    "99 Templates/Supervisor Task_Template.md",
-    "99 Templates/Meeting_Template.md",
     "05 Supervisor Tasks",
-    "00 Inbox/Coyle - 2001 - Orbit Determination at a Single.md",
-    "01 Literature/Spiridonov - 2021 - Small Satellite Orbit Determination Methods.md",
+    "00 Inbox/27-07-05 Meeting.md",
+    "00 Inbox/26-06-05 Meeting.md",
+    "04 Meetings/26-08-11 Meeting.md",
+    "04 Meetings/26-07-27 Meeting.md",
     "04 Meetings/26-06-05 Meeting.md",
+    "04 Meetings",
+    "02 Concepts/Secular Perturbation.md",
+    "02 Concepts/SatNOGS Database.md",
     "98 Attachments/Horizontal Coordinate System (WIKIPEDIA).png",
     "Untitled.base",
     "03 MOCs",
-    "04 Meetings",
-    "07 Thesis Drafts",
+    "05 Meetings",
+    "04 Thesis Drafts",
     "02 Concepts",
     "97 Archive",
-    "00 Inbox",
-    "98 Attachments"
+    "00 Inbox"
   ]
 }

@@ -30,5 +30,6 @@
   "anuppuccin-theme-settings@@anp-simple-rainbow-indentation-toggle": true,
   "anuppuccin-theme-settings@@anp-rainbow-subfolder-color-toggle": false,
   "anuppuccin-theme-settings@@anp-bg-fix": false,
-  "anuppuccin-theme-settings@@anp-hide-borders": false
+  "anuppuccin-theme-settings@@anp-hide-borders": false,
+  "anuppuccin-theme-settings@@anp-callout-color-toggle": true
 }

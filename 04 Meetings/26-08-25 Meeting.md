@@ -18,10 +18,13 @@
 
 # Actions
 - [x] Why is the project useful?
-- [ ] Final edits to milestones
+- [x] Final edits to milestones
 - [ ] Papers
-- [ ] Project plan and share stuff with Kyle
+- [x] Project plan update
+- [ ] Share stuff with Kyle
 	- [ ] Share github repo
 - [ ] Start Requirements
 - [ ] Try to request data from SatNOGs
+	- [x] Can look at existing ones
+	- [x] Can't request new data
 	- [ ] Look at format and how to get useful data
