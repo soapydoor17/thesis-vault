@@ -6,7 +6,6 @@ Type: Admin
 tags:
   - task
 ---
-
 ## Outline
 Improved satellite tracking methods for navigation and space domain awareness with limited observations
 
@@ -84,3 +83,9 @@ https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=3222&context=smallsat
 - Resulted in up to 95% reduction 
 
 For a single university CubeSat team in the first weeks after deployment, a self-run Doppler OD pipeline can give a faster, more accurate, and more trustworthy fix than waiting on TLEs, without depending on a government tasking queue.
+
+WHO WOULD USE AND WHY
+
+## DUMB IDEAS
+- Be able to visualise orbit
+- Show perigee and apogee
