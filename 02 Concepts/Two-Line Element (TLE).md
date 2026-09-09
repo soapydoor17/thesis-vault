@@ -7,7 +7,7 @@ A TLE is a standardized data format that encodes an Earth-orbiting object's mean
 
 Sometimes referred to as three line element with name on line 0
 
-[[Keplerian Orbital Elements]] are on line 2 (ish)
+[[Keplerian (Classical) Orbital Elements]] are on line 2 (ish)
 - Inclination
 - RAAN
 - Eccentricity

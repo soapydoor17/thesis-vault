@@ -1,4 +1,4 @@
-
+#infodump
 # Video 1 - Main Background
 Video: https://www.youtube.com/watch?v=2xmPfzeiJyk
 ## Background
@@ -49,7 +49,7 @@ Differential correction is similar but with multiple elements to solve for
 $$
 \overrightarrow{X} = [a \quad e \quad i \quad \Omega \quad \omega \quad M_0]^T
 $$
-Thus $\overrightarrow{X}$ are the [[Keplerian Orbital Elements]]:
+Thus $\overrightarrow{X}$ are the [[Keplerian (Classical) Orbital Elements]]:
 - $a$ - semi-major axis
 	- NOTE: this is NOT in the TLE, instead we have Mean Motion
 - $e$ - eccentricity

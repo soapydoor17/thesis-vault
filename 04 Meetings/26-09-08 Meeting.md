@@ -55,7 +55,7 @@
 	1. DO THEM
 
 # Actions
-- [ ] Sned Kyle my stuff
+- [ ] Send Kyle my stuff
 - [ ] REQUIREMENTS
 - [ ] Maybe add more to "Why is this important"
 - [ ] SatNOGS - Get added to BINAR ground station?
