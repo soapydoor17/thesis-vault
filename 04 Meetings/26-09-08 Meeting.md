@@ -61,4 +61,4 @@
 - [ ] SatNOGS - Get added to BINAR ground station?
 - [ ] Gauss-Newton Matrix Problem
 - [ ] Try SatNOGS signal processing
-- [ ] CIRA meeting Thursday/Friday
+- [x] CIRA meeting Thursday/Friday
