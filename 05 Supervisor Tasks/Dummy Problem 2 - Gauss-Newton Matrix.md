@@ -352,20 +352,14 @@ Semi-Major Axis Gradient:
 
 $$
 \begin{gathered}
-
 \frac{ \partial f_{D} }{ \partial a } = \frac{ \partial f_{D} }{ \partial \textbf X } \frac{d\textbf{X}}{da} \\
-
 \frac{d\textbf X}{da} = \left. \frac{ \partial \textbf X }{ \partial a } \right|_{M} + \frac{ \partial \textbf X }{ \partial M } \frac{ \partial M }{ \partial a } \\
-
 \left. \frac{ \partial \textbf X }{ \partial a } \right|_{M} = \begin{bmatrix}
 R(1-e\cos E) \begin{bmatrix}\cos \nu \\ \sin \nu \\ 0\end{bmatrix}, \quad
 -\dfrac{n}{2-2e\cos E} \ R \begin{bmatrix}-\sin E \\ \sqrt{ 1-e^{2} } \, \cos E \\ 0\end{bmatrix}
 \end{bmatrix}^T\\
-
 \dfrac{ \partial \textbf X }{ \partial M } = \frac{1}{n} \frac{dX}{dt} \\
-
 \dfrac{ \partial M }{ \partial a } = -\frac{3}{2} \sqrt{ \frac{\mu}{a^5} } \ t
-
 \end{gathered}
 $$
 
