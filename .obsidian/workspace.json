@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -229,7 +229,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Inbox/Satellite Orbit Determination Overview.md",
+                "file": "05 Supervisor Tasks/Dummy Problem 2 - Gauss-Newton Matrix.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -257,11 +257,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70e0703e4133ac7b",
+  "active": "67444adddfafeb65",
   "lastOpenFiles": [
+    "00 Inbox/Satellite Orbit Determination Overview.md",
     "05 Supervisor Tasks/Dummy Problem 2 - Gauss-Newton Matrix.md",
     "HOME PAGE.md",
-    "00 Inbox/Satellite Orbit Determination Overview.md",
     "02 Concepts/ECI vs ECEF.md",
     "02 Concepts/Keplerian (Classical) Orbital Elements.md",
     "05 Supervisor Tasks/Dummy Problem 1 - Gradient Descent.md",

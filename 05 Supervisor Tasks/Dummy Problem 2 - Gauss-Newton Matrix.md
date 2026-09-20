@@ -22,13 +22,16 @@ Gauss-Newton Matrix (and Fisher Info Matrix) looks at how sharply the loss chang
 > [!info] Taken from [1412.1193](https://arxiv.org/pdf/1412.1193)
 
 The curvature matrix $G$ which arise in the Gauss-Newton method for non-linear least squares problems. It is applicable to the standard neural network training objective $h$ in the case where $L(y,z) = \frac12 || y - z || ^2$ and is given by
+
 $$
 G = \frac1{|S|} \sum_{(x,y)\in S} J_f^{\top} J_f \; ,
 $$
 where $J_f$ is the Jacobian of $f(x, \theta)$ w.r.t the parameters $\theta$. It is usually defined as a modified version of the Hessian $H$ of $h$ (w.r.t $\theta$), obtained by dropping the second term inside the sum in the following expression for $H$:
+
 $$
 H=\frac1{|S|} \sum_{(x,y)\in S} \Big( J_f^\top J_f - \sum^m_{j=1} [y- f(x,\theta)]_j H_{[f]_j} \Big) \; ,
 $$
+
 where $H_{|f|_j}$ is the Hessian (w.r.t $\theta$) of the $j$-th component of $f(x,\theta)$.
 - $G=H$ when $y=f(x,\theta)$ 
 - If $y$'s are well-describe by the model $f(x,\theta) + \epsilon$ for i.i.d noise $\epsilon$, then $G=H$ will hold approximately
@@ -101,23 +104,29 @@ def COE2RV(coe, mu=3.986004418*(10**14)):
 
 ### Maths
 Need semiparameter $p$ instead of $a$:
+
 $$
 p = a(1-e^2)
 $$
+
 Need to calculate $\nu$ from $M_0$:
 - $n$ is the mean motion
+
 $$
 M(t) = M_0 + n (t-t_0)
 $$
+
 $$
 n = \sqrt{\frac{\mu}{a^3}}
 $$
 - Use Newton-Raphson Method (Algorithm 2 in FoAaA pg. 65) to find $E$
 	- Converts $M=E-e\sin (E)$ to be in terms of $E$
 - The calculate $\nu$
+
 $$
 \cos(\nu) = \frac{\cos(E) - e}{1-e\cos(E)}
 $$
+
 ```python
 def n(a, mu=3.986004418*(10**14)):
     # Returns the mean motion in rads/s
@@ -263,6 +272,7 @@ $$
 
 ### Multiple Observations
 Where $n$ is the number of observations
+
 $$ J (\boldsymbol \theta)=
 \dfrac{\partial \boldsymbol \epsilon}{\partial \boldsymbol{\theta}} = 
 \begin{bmatrix}
@@ -272,13 +282,17 @@ $$ J (\boldsymbol \theta)=
 \dfrac{\partial \epsilon_{n}}{\partial M_0} & \dfrac{\partial \epsilon_{n}}{\partial a} \\
 \end{bmatrix}
 $$
+
 ### Partial Derivatives
 Relationship between Doppler shift and satellite cartesian state:
 - where $I$ is an identity matrix (3x3 for x,y,z dimensions)
+
 $$
 \frac{ \partial f_{D} }{ \partial \textbf X } = \left[ -k \ v_{rel}^{T} \left( \frac{I}{||\rho||} - \frac{\rho\rho^{T}}{||\rho||^3} \right), \ -k\hat\rho^T \right]
 $$
+
 Derivative of the cartesian state of the satellite:
+
 $$
 \frac{d \textbf X}{dt} = \left[ v, - \frac{\mu r}{||r||^{3}} \right]^T \\
 $$
@@ -310,6 +324,7 @@ Initial Mean Anomaly Gradient:
 - $\frac{dX}{dt}$ is a 6x1 matrix
 - $\frac{ \partial M }{ \partial t }$ will be a constant for each individual time
 - Thus gradient is a single value for each time
+
 $$
 \begin{gathered}
 \frac{ \partial f_{D} }{ \partial M_{0} } = \frac{ \partial f_{D} }{ \partial \textbf X } \frac{d \textbf X}{dt} \left( \frac{dM}{dt} \right)^{-1}\frac{ \partial M }{\partial M_{0}} \\
@@ -334,6 +349,7 @@ def dfD_dM_0Calc(dfD_dX, dX_dt, n):
 ```
 
 Semi-Major Axis Gradient:
+
 $$
 \begin{gathered}
 
@@ -352,6 +368,7 @@ R(1-e\cos E) \begin{bmatrix}\cos \nu \\ \sin \nu \\ 0\end{bmatrix}, \quad
 
 \end{gathered}
 $$
+
 ```python
 def dfD_daCalc(dfD_dX, dX_dt, t, rot_mat, n, a, e, E, nu, mu=MU_EARTH):
     # Semi-Major Axis Gradient
@@ -412,9 +429,11 @@ def Jacobian(dfD_dM_0, dfD_da):
 ```
 
 ## 6. Form the Gauss-Newton Matrix
+
 $$
 G= \frac{1}{N} J^TJ
 $$
+
 Will be a 2x2 matrix (two parameters)
 - Diagonal parameters -> how sensitive residuals are to each parameter individually. 
 - Off-diagonal entry -> whether changing $a$ and changing $M_0$ produce _similar-looking effects_ on your residuals
