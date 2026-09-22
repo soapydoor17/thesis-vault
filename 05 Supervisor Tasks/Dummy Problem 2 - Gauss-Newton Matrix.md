@@ -208,6 +208,7 @@ Now knowing $\textbf{r}$ and $\textbf{v}$, can solve for $f_D$, as long as we al
 ### Getting Ground Station Vectors
 Position $\textbf{r}_{gs}$
 1. Convert geodetic coordinates to (lat/lon/att) to ECEF
+	- BINAR:  	-32.007°, 115.894°,  50 m (lat/lon/att)
 2. Rotate ECEF to ECI using Earth's rotation angle at each timestamp (via sidereal time)
 
 Velocity $\textbf{v}_{gs}$
@@ -219,9 +220,7 @@ INPUT:
 - $\textbf{v}$ - velocity vector of satellite relative to the center of the Earth
 	- as calculated from COE2RV
 - $\textbf{r}_{gs}$ - position vector of ground station relative to the center of the Earth
-	- HOW???
 - $\textbf{v}_{gs}$ - velocity vector of ground station relative to the center of the Earth
-	- HOW???
 - $f_c$ - Beacon center frequency 
 	- from given data
 - $c$ - Speed of light = $299792458 \ m/s$

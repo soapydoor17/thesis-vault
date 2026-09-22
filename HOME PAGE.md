@@ -1,4 +1,11 @@
-# Important Pages
+# Latest Meeting
+[[26-09-08 Meeting]]
+# Key Pages
+[[Project Plan DRAFT]]
+[[Dummy Problem 2 - Gauss-Newton Matrix]]
+[[Requirements]]
+
+# External Pages
 [Obsidian Github](https://github.com/soapydoor17/thesis-vault)
 [Code Github](https://github.com/soapydoor17/satellite-orbit-deteremination)
 [Google Drive](https://drive.google.com/drive/folders/1tomxewpuS1-F8TBXyAzOHkgTZqMJjhLq?usp=sharing)

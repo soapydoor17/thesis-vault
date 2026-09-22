@@ -59,6 +59,6 @@
 - [ ] REQUIREMENTS
 - [ ] Maybe add more to "Why is this important"
 - [ ] SatNOGS - Get added to BINAR ground station?
-- [ ] Gauss-Newton Matrix Problem
+- [x] Gauss-Newton Matrix Problem
 - [ ] Try SatNOGS signal processing
 - [x] CIRA meeting Thursday/Friday

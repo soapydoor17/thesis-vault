@@ -16,3 +16,4 @@ tags:
 ## Source
 [Orbital Mechanics and Astrodynamics](https://orbital-mechanics.space/classical-orbital-elements/classical-orbital-elements.html)
 - Also see converting between state vector and classical orbital elements ([link](https://orbital-mechanics.space/classical-orbital-elements/orbital-elements-and-the-state-vector.html))
+Fundamentals of Astrodynamics and Applications by D. Vallado - Chapter 2.4.1
