@@ -8,35 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e8eb05429d0f3a75",
+            "id": "772aa38d72615d80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 Meetings/26-09-08 Meeting.md",
+                "file": "05 Supervisor Tasks/Project Plan DRAFT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "26-09-08 Meeting"
+              "title": "Project Plan DRAFT"
             }
           },
           {
-            "id": "67444adddfafeb65",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05 Supervisor Tasks/Dummy Problem 2 - Gauss-Newton Matrix.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Dummy Problem 2 - Gauss-Newton Matrix"
-            }
-          },
-          {
-            "id": "76e6d61d0b047400",
+            "id": "043c2c533b982f7d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,35 +36,21 @@
             }
           },
           {
-            "id": "d51e40c9968d7eb1",
+            "id": "82d9b641b5b6d3f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Supervisor Tasks/Requirements.md",
-                "mode": "source",
+                "file": "05 Supervisor Tasks/Dummy Problem 2 - Gauss-Newton Matrix.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Requirements"
-            }
-          },
-          {
-            "id": "03b55920ee49b9c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 Concepts/Keplerian (Classical) Orbital Elements.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Keplerian (Classical) Orbital Elements"
+              "title": "Dummy Problem 2 - Gauss-Newton Matrix"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -153,8 +125,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "05 Supervisor Tasks/Requirements.md",
-                "collapseAll": true,
+                "file": "05 Supervisor Tasks/Dummy Problem 2 - Gauss-Newton Matrix.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -215,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "05 Supervisor Tasks/Requirements.md",
+                "file": "05 Supervisor Tasks/Dummy Problem 2 - Gauss-Newton Matrix.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -229,62 +201,62 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 319.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Create new base": false
     }
   },
-  "active": "d51e40c9968d7eb1",
+  "active": "82d9b641b5b6d3f3",
   "lastOpenFiles": [
-    "05 Supervisor Tasks/Dummy Problem 2 - Gauss-Newton Matrix.md",
-    "05 Supervisor Tasks/Requirements.md",
-    "03 Methods/Satellite Orbit Determination Overview.md",
-    "02 Concepts/Keplerian (Classical) Orbital Elements.md",
-    "04 Meetings/26-09-08 Meeting.md",
+    "desktop.ini",
     "00 Inbox/26-09-22 Meeting.md",
-    "02 Concepts/Two-Line Element (TLE).md",
-    "05 Supervisor Tasks/Dummy Problem 1 - Gradient Descent.md",
-    "05 Supervisor Tasks/Project Plan DRAFT.md",
-    "00 Inbox/Kalman Filtering.md",
-    "06 Progress Report Drafts/03 Introduction.md",
-    "06 Progress Report Drafts/07 References.md",
-    "06 Progress Report Drafts/06 Future Work.md",
-    "06 Progress Report Drafts/05 Results and Discussion.md",
-    "06 Progress Report Drafts/04 Aims.md",
-    "HOME PAGE.md",
-    "02 Concepts/ECI vs ECEF.md",
+    "04 Meetings/26-08-25 Meeting.md",
     "98 Attachments/Pasted image 20260909103927.png",
     "98 Attachments/Pasted image 20260909083342.png",
     "98 Attachments/Pasted image 20260908174201.jpg",
     "98 Attachments/Pasted image 20260908173150.png",
-    "00 Inbox/Orbit Determination Algorithms.md",
-    "02 Concepts/Kepler's Law's of Planetary Motion.md",
-    "02 Concepts/Keplerian Motion Model.md",
     "05 Supervisor Tasks/Getting Data from SatNOGS.md",
-    "04 Meetings/26-08-25 Meeting.md",
-    "00 Inbox/Coyle - 2001 - Orbit Determination at a Single.md",
-    "02 Concepts/SatNOGS Database.md",
-    "04 Meetings/26-08-11 Meeting.md",
-    "04 Meetings/26-07-27 Meeting.md",
+    "05 Supervisor Tasks/Dummy Problem 2 - Gauss-Newton Matrix.md",
+    "05 Supervisor Tasks/Dummy Problem 1 - Gradient Descent.md",
+    "04 Meetings/26-09-08 Meeting.md",
+    "03 Methods/Satellite Orbit Determination Overview.md",
+    "03 Methods",
+    "02 Concepts/Keplerian (Classical) Orbital Elements.md",
+    "02 Concepts/ECI vs ECEF.md",
+    "00 Inbox/Getting Data from SatNOGS.md",
+    "00 Inbox/26-09-08 Meeting.md",
+    "05 Supervisor Tasks/Project Plan DRAFT.md",
+    "00 Inbox/Dummy Problems - Gauss-Newton Matrix.md",
+    "02 Concepts/Gradient Descent.md",
+    "05 Supervisor Tasks/Requirements.md",
+    "05 Supervisor Tasks/Dummy Problems - Gradient Descent.md",
+    "99 Templates/Draft_Template.md",
+    "99 Templates/Supervisor Task_Template.md",
+    "06 Progress Report Drafts/08 Appendix.md",
+    "06 Progress Report Drafts/07 References.md",
+    "06 Progress Report Drafts/06 Future Work.md",
+    "06 Progress Report Drafts/04 Aims.md",
+    "06 Progress Report Drafts/05 Results and Discussion.md",
+    "06 Progress Report Drafts/03 Introduction.md",
+    "06 Progress Report Drafts/02 Nomenclature.md",
     "06 Progress Report Drafts",
     "05 Supervisor Tasks",
+    "04 Meetings",
     "98 Attachments/Horizontal Coordinate System (WIKIPEDIA).png",
     "Untitled.base",
-    "03 Methods",
-    "04 Meetings",
-    "07 Thesis Drafts",
+    "03 MOCs",
+    "05 Meetings",
+    "04 Thesis Drafts",
     "02 Concepts",
-    "97 Archive",
-    "00 Inbox",
-    "98 Attachments"
+    "97 Archive"
   ]
 }
