@@ -126,6 +126,7 @@ $$
 $$
 \cos(\nu) = \frac{\cos(E) - e}{1-e\cos(E)}
 $$
+NOTE: The following have changed a lot
 
 ```python
 def n(a, mu=3.986004418*(10**14)):
@@ -188,6 +189,16 @@ def MultiNewtRaph(t, M_0, n, e, tolerance=10**-8):
     return E_t
 ```
 
+
+NOTE: Had to change nu from `np.arccos` to `np.arctan2`. Cosine treats treats ${}\theta{}$ and ${}-\theta{}$ identically (i.e. ${}\cos(\theta)=\cos(-\theta){}$). Thus ${}\arccos(x){}$ has two possible answers: ${}\theta{}$ and ${}-\theta{}$. In numpy, `np.arccos` will always return a value between 0 and 180 degrees, meaning if the correct angle in between 180 and 360, the function will incorrectly give the mirror image instead. Using `np.arctan2` requires knowledge of both ${}\sin \theta{}$ and ${}\cos \theta{}$, which allows it pin down the value of ${}\theta{}$ across the entire circle. Using ${}\cos\nu{}$ as defined above and ${}\sin \nu{}$ as such:
+
+$$
+\begin{gathered}
+\sin \nu= \dfrac{\sin E  \sqrt{ 1-e^{2} }}{1-e\cos E} \\
+\nu = \arctan\left( \frac{\sin \nu}{\cos \nu} \right) = \arctan\left( \frac{\sin (E)\sqrt{ 1-e^{2} }}{\cos(E)-e} \right)
+\end{gathered}
+$$
+ORIGINAL NU:
 ```python
 def nu(E, e):
     # Inputs:
@@ -201,11 +212,26 @@ def nu(E, e):
     return nu
 ```
 
+UPDATED NU:
+```python
+def nuCalc(E, e):
+    # Inputs:
+    #   E - Eccentric anomaly (radians)
+    #   e - Eccentricity
+    # Outputs:
+    #   nu - True Anomaly (radians)
+    nu = np.arctan2(np.sin(E) * np.sqrt(1-e**2), np.cos(E) - e)
+    return nu
+```
 ## 2. Get Doppler Shift from $\textbf{r}$ and $\textbf{v}$
 Now knowing $\textbf{r}$ and $\textbf{v}$, can solve for $f_D$, as long as we also have ground station vectors ECI
 [[ECI vs ECEF]]
 
 ### Getting Ground Station Vectors
+
+QUESTION: Assuming binar GS (see coords)
+QUESTION: What is the timezone? (see assumption)
+
 Position $\textbf{r}_{gs}$
 1. Convert geodetic coordinates to (lat/lon/att) to ECEF
 	- BINAR:  	-32.007°, 115.894°,  50 m (lat/lon/att)
@@ -213,6 +239,48 @@ Position $\textbf{r}_{gs}$
 
 Velocity $\textbf{v}_{gs}$
 1. Differentiate rotation (angular velocity crossed with position)
+
+[CelesTrack Part I](https://celestrak.org/columns/v02n01/)
+[CelesTrack Part II](https://celestrak.org/columns/v02n02/)
+[CelesTrack Part III](https://celestrak.org/columns/v02n03/)
+
+Oblate-Earth position formulas (Geodetic to ECI):
+- ${}a = 6,378.137 \text{ km}{}$ - Earth's equitorial radius
+- ${}C, \ S{}$ - Oblateness correction factors
+	- ${}C = \dfrac{1}{\sqrt{1-f(2-f)\sin^2\upvarphi}}{}$
+	- $S=(1-f)^{2}C$
+	- ${}f = \frac{1}{298.257}{}$ - Earth flattening as defined in FoAaA
+- ${}\upvarphi{}$ - Geodetic Latitude 
+- ${}\theta{}$ - local sidereal time
+
+$$
+\begin{gathered}
+x' = aC\cos \upvarphi \cos \theta, \quad y'=aC\cos \upvarphi \sin \theta, \quad z'=aS \sin \upvarphi 
+\\ \\ \textbf{r}_{gs} = \begin{bmatrix}
+x' \\ y' \\ z'
+\end{bmatrix} \\ \\
+\textbf{v}_{gs} = \omega_{\oplus} \times \textbf r_{gs}
+\end{gathered}
+$$
+USING `astropy`:
+```python
+from astropy.time import Time
+from astropy.coordinates import EarthLocation, ITRS, GCRS
+import astropy.units as u
+
+def groundstationECI(lat_deg, lon_deg, alt_m, time):
+    station = EarthLocation(lat=lat_deg*u.deg, lon=lon_deg*u.deg, 
+							    height=alt_m*u.m)
+    t = Time(time, scale='utc')
+    
+    pos, vel = station.get_gcrs_posvel(obstime=t)
+	
+    r_gs = pos.xyz.to(u.m).value 
+    v_gs = vel.xyz.to(u.m/u.s).value
+	
+    return r_gs, v_gs
+```
+
 ### Doppler Shift Equation
 INPUT:
 - $\textbf{r}$ - position vector of satellite relative to the center of the Earth 
@@ -426,6 +494,8 @@ def Jacobian(dfD_dM_0, dfD_da):
 $$
 G= \frac{1}{N} J^TJ
 $$
+
+KYLE: Yes, when you do the matrix multiplication you really just get the sum of the Jacobians for each data point. So the 1/N is just normalising, its not strictly necessary, and then G becomes the average information matrix.
 
 Will be a 2x2 matrix (two parameters)
 - Diagonal parameters -> how sensitive residuals are to each parameter individually. 
