@@ -1,21 +1,23 @@
 # Functionality Requirements
 **What does the solution need to do?**
 1. The tool shall process time-tagged SatNOGS frequency observations to get the Doppler shift relative to the centre frequency of the carrier.
-2. The tool shall run initial orbit determination (IOD) from Doppler observations without a prior TLE, given ????
+2. The tool shall (SHOULD?) run initial orbit determination (IOD) from Doppler observations without a prior TLE, given ????
 	- Coyle assumes launch provider's is chill
 	- Spiridonov does grid search? 
 	- More research here probs
 	- <span style="color:red">What is IOD input?</span> 
-3. The tool shall run differential correction (DC) to correct an *a priori* orbit (IOD output or prior TLE) using the range-rate data from at least 2? observations, and shall report the solution's uncertainty
+3. The tool shall run differential correction (DC) to correct an *a priori* orbit (IOD output or prior TLE) using the range-rate data from at least 2 passes, and shall report the solution's uncertainty
 4. The tool shall detect and report an ill-conditioned or unobservable solution instead of returning an orbit
 
 # Performance Requirements
 **How well does it need to perform? Include metrics**
 1. The tool shall produce a solution within 5 mins on a standard laptop once the data is available.
 	- <span style="color:red">Is this realistic for this type of problem?</span>
-2. On held-out passes within [24 h] of the fit, the tool's Doppler prediction RMS error shall be at most [200 Hz] and lower than the TLE-predicted Doppler on the same passes
-	- BSU uses 200Hz as their tolerance
+	- <span style="color:red">Define IOD and DC separately? Should this be based of prototype?</span>
+2. On held-out passes within 24 hour of the fit, the tool's Doppler prediction RMS error shall be at most 200 Hz and lower than the TLE-predicted Doppler on the same passes
+	- BSU uses 200Hz as their tolerance (the error associated with the frequency instability of the on board USS transmitter)
 3. Given 2 passes over a 12 hour period with noise of ${}\sigma{}$ Hz, the tool shall estimate position at epoch to within 10 km
+	- <span style="color:red">What is the noise?</span>
 4. The tool shall converge from a TLE that is at most 8 hours older than the first observation
 
 # Interface Requirements
@@ -38,8 +40,9 @@
 		- $M_0$ - Initial mean anomaly (deg)
 	- Perturbation Coefficients
 		- TLE has the first and second derivative of mean motion, as well as B* drag term
+		- Some papers talk about J2?
 		- <span style="color:red">WHAT PERTURBATION COEFFICIENTS SHOULD IT PREDICT?</span> 
-3. The tool shall predict the Doppler shift for the next **X** passes
+3. The tool shall predict the Doppler shift for all passes in the next 24 hours
 	- <span style="color:red">WHAT IS X?</span>
 4. The tool shall be open-source, written in Python, and documented with a worked example
 
