@@ -129,7 +129,7 @@ $$
 NOTE: The following have changed a lot
 
 ```python
-def n(a, mu=3.986004418*(10**14)):
+def nCalc(a, mu=3.986004418*(10**14)):
     # Returns the mean motion in rads/s
     return np.sqrt(mu / a**3)
 ```
@@ -200,7 +200,7 @@ $$
 $$
 ORIGINAL NU:
 ```python
-def nu(E, e):
+def nuCalc(E, e):
     # Inputs:
     #   E - Eccentric anomaly (radians)
     #   e - Eccentricity
@@ -298,17 +298,20 @@ OUTPUT
 	- To be the prediction for the model
 
 ```python
-def f_D(r, v, r_gs, v_gs, f_c, c=299792458):
-    rho = r - r_gs
-    rho_hat = rho / np.sqrt(rho.dot(rho))
-	
-    v_rel = v - v_gs
-	
-    k = f_c/c
-	
-    f_D = k * rho_hat * (-1 * v_rel)
-	
-    return f_D
+def rhoCalc(r, r_gs):
+    return r-r_gs
+
+def rho_hatCalc(rho):
+    return rho / np.sqrt(rho.dot(rho))
+
+def v_relCalc(v, v_gs):
+    return v-v_gs
+
+def kCalc(f_c, c=SPEED_OF_LIGHT):
+    return f_c/c
+
+def fDCalc(k, rho_hat, v_rel):
+    return k * rho_hat * (-v_rel)
 ```
 
 ## 3. Find the error/residual
@@ -539,3 +542,9 @@ Compare the two case
 Interpret
 - Which parameter combinations are well-observed vs poorly
 - Why does it make sense given Doppler measurements and what they can/can't distinguish?
+
+
+# Questions
+- Is this meant to be gradient descent into Gauss-Newton Matrix?
+- What values to assume for the other orbital parameters at this point?
+- Confirm method for getting groundstation vectors
