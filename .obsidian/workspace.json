@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 Supervisor Tasks/Gauss-Newton Matrix/Discussion.md",
+                "file": "05 Supervisor Tasks/Requirements.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Discussion"
+              "title": "Requirements"
             }
           },
           {
@@ -200,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "05 Supervisor Tasks/Gauss-Newton Matrix/Discussion.md",
+                "file": "05 Supervisor Tasks/Requirements.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -230,8 +230,8 @@
   },
   "active": "67444adddfafeb65",
   "lastOpenFiles": [
-    "05 Supervisor Tasks/Gauss-Newton Matrix/Notes.md",
     "05 Supervisor Tasks/Gauss-Newton Matrix/Discussion.md",
+    "05 Supervisor Tasks/Gauss-Newton Matrix/Notes.md",
     "00 Inbox/26-09-25 Meeting.md",
     "05 Supervisor Tasks/Requirements.md",
     "00 Inbox/QUESTIONS.md",
