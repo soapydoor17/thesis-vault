@@ -2,7 +2,7 @@
 [[26-09-08 Meeting]]
 # Key Pages
 [[Project Plan DRAFT]]
-[[Dummy Problem 2 - Gauss-Newton Matrix]]
+[[Notes]]
 [[Requirements]]
 
 # External Pages
