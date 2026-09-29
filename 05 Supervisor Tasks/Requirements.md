@@ -1,24 +1,17 @@
 # Functionality Requirements
 **What does the solution need to do?**
 1. The tool shall process time-tagged SatNOGS frequency observations to get the Doppler shift relative to the centre frequency of the carrier.
-2. The tool shall (SHOULD?) run initial orbit determination (IOD) from Doppler observations without a prior TLE, given ????
-	- Coyle assumes launch provider's is chill
-	- Spiridonov does grid search? 
-	- More research here probs
-	- <span style="color:red">What is IOD input?</span> 
-3. The tool shall run differential correction (DC) to correct an *a priori* orbit (IOD output or prior TLE) using the range-rate data from at least 2 passes, and shall report the solution's uncertainty
-4. The tool shall detect and report an ill-conditioned or unobservable solution instead of returning an orbit
+2. For a single ground station, the tool shall run differential correction (DC) to correct an *a priori* orbit (prior TLE) using the range-rate data from at least 2 passes, and shall report the solution's uncertainty
+3. The tool shall detect and report an ill-conditioned or unobservable solution instead of returning an orbit
+4. The tool should run initial orbit determination (IOD) from Doppler observations without a prior TLE.
+5. For multiple ground stations, or additional beacon information beyond Doppler, the tool should investigate whether DC converges reliably to the true orbit from a wide range of initial guesses, without requiring a good a priori orbit. Where this is confirmed, the tool should support DC without a supplied a priori.
 
 # Performance Requirements
 **How well does it need to perform? Include metrics**
-1. The tool shall produce a solution within 5 mins on a standard laptop once the data is available.
-	- <span style="color:red">Is this realistic for this type of problem?</span>
-	- <span style="color:red">Define IOD and DC separately? Should this be based of prototype?</span>
-2. On held-out passes within 24 hour of the fit, the tool's Doppler prediction RMS error shall be at most 200 Hz and lower than the TLE-predicted Doppler on the same passes
-	- BSU uses 200Hz as their tolerance (the error associated with the frequency instability of the on board USS transmitter)
-3. Given 2 passes over a 12 hour period with noise of ${}\sigma{}$ Hz, the tool shall estimate position at epoch to within 10 km
-	- <span style="color:red">What is the noise?</span>
-4. The tool shall converge from a TLE that is at most 8 hours older than the first observation
+1. For DC, the tool shall produce a solution within 30 seconds on a standard laptop once the data is available.
+2. On held-out passes within 24 hour of the fit, the tool's Doppler prediction RMS error shall be within 10% of the RMS noise of the input observation, and lower than the TLE-predicted Doppler on the same passes
+3. The tool shall converge from a TLE that is at most 8 hours older than the first observation
+4. The tool shall predict the Doppler shift for all passes in the next 24 hours
 
 # Interface Requirements
 **How will it interact with other systems and people?**
@@ -26,7 +19,6 @@
 	- Satellite ID
 	- Doppler shift measurement of the CubeSat from SatNOGS
 	- Central frequency of the carrier
-	- Unknown transmitter offset
 	- Ground station geodetic coordinates (lat / lon / alt)
 	- Date-time stamp
 	- Prior TLEs (for DC)
@@ -39,12 +31,11 @@
 		- $\omega$ - Argument of perigee (deg)
 		- $M_0$ - Initial mean anomaly (deg)
 	- Perturbation Coefficients
-		- TLE has the first and second derivative of mean motion, as well as B* drag term
-		- Some papers talk about J2?
-		- <span style="color:red">WHAT PERTURBATION COEFFICIENTS SHOULD IT PREDICT?</span> 
-3. The tool shall predict the Doppler shift for all passes in the next 24 hours
-	- <span style="color:red">WHAT IS X?</span>
-4. The tool shall be open-source, written in Python, and documented with a worked example
+		- Second derivative of mean motion
+		- B* drag term
+	- Residuals
+	- Uncertainty
+3. The tool shall be open-source, written in Python, and documented with a worked example
 
 # OUT OF SCOPE
 - Spacecrafts with manoeuvres and non-LEO orbits - this project is focusing on university team CubeSats in low earth orbits

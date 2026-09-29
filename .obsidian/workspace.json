@@ -63,8 +63,7 @@
               "title": "26-09-25 Meeting"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,7 +200,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "05 Supervisor Tasks/Gauss-Newton Matrix/Notes.md",
+                "file": "05 Supervisor Tasks/Requirements.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -229,10 +228,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d51e40c9968d7eb1",
+  "active": "67444adddfafeb65",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "05 Supervisor Tasks/Gauss-Newton Matrix/Notes.md",
+    "conflict-files-obsidian-git.md",
     "05 Supervisor Tasks/Requirements.md",
     "05 Supervisor Tasks/Gauss-Newton Matrix/Discussion.md",
     "00 Inbox/26-09-25 Meeting.md",
